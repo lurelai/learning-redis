@@ -1,0 +1,11 @@
+{
+  "name": "learning-redis",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:lurelai/learning-redis.git",
+  "author": "Lucas Ariel <github.lucas.ariel27@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

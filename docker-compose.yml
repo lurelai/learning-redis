@@ -1,7 +1,13 @@
 services:
   api:
-    image: node:21.6.2
+    image: "python-node"
     container_name: "api"
+    working_dir: "/usr/app"
+    volumes: 
+      - "$PWD:/usr/app"
+    command: ["nodemon", "app.js"]
+    ports: 
+      - 8080:8000
     depends_on: 
       redis:
         condition: service_healthy
