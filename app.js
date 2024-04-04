@@ -1,8 +1,15 @@
 const express = require("express")
 const app = express()
 
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+const { createConnection } = require('./src/database/initRedis')
+
+createConnection()
+
 app.get('/', (req, res)=>{
-	return res.send('okay')
+
 })
 
 app.listen(8000)

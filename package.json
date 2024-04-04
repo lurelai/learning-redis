@@ -6,6 +6,7 @@
   "author": "Lucas Ariel <github.lucas.ariel27@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "redis": "^4.6.13"
   }
 }
